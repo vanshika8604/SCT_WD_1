@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Web Application</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="calculator">
+            <!-- Display Area -->
+            <div class="display">
+                <div class="previous-operand" id="previous-operand"></div>
+                <div class="current-operand" id="current-operand">0</div>
+            </div>
+            
+            <!-- Button Grid -->
+            <div class="buttons">
+                <!-- First Row: Clear, Backspace, Division -->
+                <button class="btn btn-function" data-action="clear">C</button>
+                <button class="btn btn-function" data-action="backspace">⌫</button>
+                <button class="btn btn-function" data-action="percentage">%</button>
+                <button class="btn btn-operator" data-operator="÷">÷</button>
+                
+                <!-- Second Row: 7, 8, 9, Multiply -->
+                <button class="btn btn-number" data-number="7">7</button>
+                <button class="btn btn-number" data-number="8">8</button>
+                <button class="btn btn-number" data-number="9">9</button>
+                <button class="btn btn-operator" data-operator="×">×</button>
+                
+                <!-- Third Row: 4, 5, 6, Subtract -->
+                <button class="btn btn-number" data-number="4">4</button>
+                <button class="btn btn-number" data-number="5">5</button>
+                <button class="btn btn-number" data-number="6">6</button>
+                <button class="btn btn-operator" data-operator="-">-</button>
+                
+                <!-- Fourth Row: 1, 2, 3, Add -->
+                <button class="btn btn-number" data-number="1">1</button>
+                <button class="btn btn-number" data-number="2">2</button>
+                <button class="btn btn-number" data-number="3">3</button>
+                <button class="btn btn-operator" data-operator="+">+</button>
+                
+                <!-- Fifth Row: 0, Decimal, Equals -->
+                <button class="btn btn-number btn-zero" data-number="0">0</button>
+                <button class="btn btn-number" data-action="decimal">.</button>
+                <button class="btn btn-equals" data-action="equals">=</button>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p>Modern Calculator - Built with HTML, CSS & JavaScript</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
